@@ -30,12 +30,9 @@ class Beverage
     }
     public function getInfo():string
     {
-        return " € This beverage is a cola, it is $this->temperature and $this->color.";
+        return "This beverage is $this->temperature and $this->color.";
     }
 
 }
 
-$cola = new Beverage("black", 2);
-echo $cola->price;
-echo $cola->getInfo();
 
