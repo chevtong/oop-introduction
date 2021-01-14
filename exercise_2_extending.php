@@ -16,7 +16,7 @@ Try to get this error on the screen= Fatal error: Uncaught Error: Call to undefi
 USE TYPEHINTING EVERYWHERE!
 */
 
-
+require 'exercise_1_classes.php';
 
 
 class Beer extends Beverage
@@ -39,6 +39,14 @@ class Beer extends Beverage
 }
 
 
+$duvel = new Beer("blonde", 3.5, "warm","duvel",8.5);
+echo "Name: ".$duvel->name."<br>";
+echo "Color: ".$duvel->color."<br>";
+echo "Info: ".$duvel->getInfo()."<br>";
+echo $duvel->getAlcoholPercentage()."% <br>";
+echo number_format($duvel->getAlcoholPercentage(), 2) . "% <br>";
+//echo $cola->getAlcoholPercentage()."% <br>";
+?>
 
 
 

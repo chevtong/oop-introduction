@@ -35,4 +35,9 @@ class Beverage
 
 }
 
+$cola = new Beverage("black", 2);
+echo $cola->price . "euro <br>";
+echo $cola->getInfo()."<br>";
+echo $cola->temperature;
+
 

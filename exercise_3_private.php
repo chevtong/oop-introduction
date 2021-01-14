@@ -11,7 +11,7 @@ Print this method on the screen on a new line.
 USE TYPEHINTING EVERYWHERE!
 */
 declare(strict_types=1);
-//require 'exercise_1_classes.php';
+require 'exercise_1_classes.php';
 
 
 class Beer extends Beverage
@@ -47,6 +47,19 @@ class Beer extends Beverage
     }
 
 }
+
+$duvel = new Beer("blonde", 3.5, "warm","duvel",8.5);
+
+echo "Name: ". $duvel->getName()."<br>";
+echo "Color: ".$duvel->color."<br>";
+echo "Info: ".$duvel->getInfo()."<br>";
+echo $duvel->getAlcoholPercentage()."% <br>";
+echo number_format($duvel->getAlcoholPercentage(), 2) . "% <br>";
+
+$duvel->changeColor("light");
+echo "New Color: " . $duvel->color . "<br>";
+
+echo $duvel->beerInfo();
 
 
 
